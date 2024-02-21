@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="si.css">
+    <title>Cifrado</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="terminal_toolbar">
+            <div class="butt">
+                <button class="btn btn-color"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+            </div>
+            <p class="user">johndoe@admin: ~</p>
+            <div class="add_tab">
+                +
+            </div>
+        </div>
+        <div class="terminal_body">
+            <div class="terminal_promt">
+                <span class="terminal_user">hectoralexis@admin:</span>
+                <span class="terminal_location">~</span>
+                <span class="terminal_bling">$</span>
+                <span class="terminal_cursor"></span>
+            </div>
+            <br>
+            <h2>Cifrador de Mensajes</h2>
+            <textarea id="inputText" rows="4" cols="79" placeholder="Ingresa un mensaje"></textarea>
+            <br>
+
+            <button onclick="cifrarMensaje()">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+                <span class="circle5"></span>
+                <span class="text">Cifrar</span>
+            </button>
+            <br>
+            <button onclick="borrarTexto()">
+                <span class="circle1"></span>
+                <span class="circle2"></span>
+                <span class="circle3"></span>
+                <span class="circle4"></span>
+                <span class="circle5"></span>
+                <span class="text">Borrar</span>
+            </button>
+            
+
+            <h2>Mensaje Cifrado:</h2>
+            <p id="mensajeCifrado" style="color: white; text-align: center; font-size: 30px;"></p>
+        </div>
+    </div>
+
+</body>
+
+<script src="sustitucion.js"></script>
+
+</html>
